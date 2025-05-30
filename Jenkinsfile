@@ -3,18 +3,18 @@ pipeline {
 
     environment {
         IMAGE_NAME = "devsecops-flask"
-        DOCKER_REGISTRY = "your-dockerhub-username"
+        DOCKER_REGISTRY = "purushotham1234"
         SONARQUBE = "SonarQube"
     }
 
     tools {
-        python "Python3"
+        python "Python"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/your-repo/devsecops-flask-app.git'
+                git url: 'https://github.com/Mpurushotham/devsecops-jenkins-pipeline.git'
             }
         }
 
