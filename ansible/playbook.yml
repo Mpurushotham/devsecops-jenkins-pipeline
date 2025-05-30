@@ -1,0 +1,6 @@
+- hosts: localhost
+  tasks:
+    - name: Ensure message file exists
+      copy:
+        dest: /tmp/message.txt
+        content: 'Deployed by Ansible'
